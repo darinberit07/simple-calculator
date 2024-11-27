@@ -2,8 +2,8 @@ let displayBox = document.getElementById("calc-screen");
 let buttons = document.querySelectorAll("button");
 let expression = "";
 
-let butttonArray = Array.from(buttons);
-butttonArray.forEach(button => {
+let buttonArray = Array.from(buttons);
+buttonArray.forEach(button => {
     button.addEventListener("click", (event) => {
         const val = event.target.value;
         if(val == "all-clear"){
